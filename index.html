@@ -5,37 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alan Thomas | MCA Student Portfolio</title>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/styles.css" />
 
-  <!-- Tailwind Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
-          colors: {
-            'primary-dark': '#0f172a',
-            'secondary-dark': '#1e293b',
-            'accent-teal': '#0d9488',
-            'text-light': '#f1f5f9',
-            'text-secondary': '#94a3b8',
-          }
-        }
-      }
-    };
-  </script>
-
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <style>
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
-    ::-webkit-scrollbar-track { background: #1e293b; }
-    html { scroll-behavior: smooth; }
-    .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
-  </style>
 </head>
 
 <body class="bg-primary-dark font-sans text-text-light">
@@ -52,8 +23,10 @@
         <a href="#certificates" class="text-text-secondary hover:text-accent-teal">Certificates</a>
         <a href="#contact" class="text-text-secondary hover:text-accent-teal">Contact</a>
       </div>
-      <button id="mobile-menu-btn" class="md:hidden text-text-light p-2 rounded-lg hover:bg-secondary-dark">
-        <i data-lucide="menu"></i>
+      <button id="mobile-menu-btn" class="md:hidden text-text-light p-2 rounded-lg hover:bg-secondary-dark" aria-label="Open menu">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
       </button>
     </nav>
     <div id="mobile-menu" class="hidden md:hidden border-t border-secondary-dark px-4 pb-2">
@@ -91,15 +64,18 @@
         <div class="flex gap-4">
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/alan-thomas-b30885276/"
-             target="_blank"
-             aria-label="LinkedIn"
-             class="w-11 h-11 rounded-full border border-accent-teal text-accent-teal
-                    flex items-center justify-center
-                    hover:bg-accent-teal hover:text-primary-dark
-                    transition shadow-lg">
-            <i data-lucide="linkedin"></i>
-          </a>
+          target="_blank"
+          aria-label="LinkedIn"
+          class="w-11 h-11 rounded-full border border-accent-teal text-accent-teal
+          flex items-center justify-center
+          hover:bg-accent-teal hover:text-primary-dark
+          transition shadow-lg">
 
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.97 1.97 0 0 0 3.28 5c0 1.08.87 1.97 1.97 1.97A1.97 1.97 0 0 0 7.22 5 1.98 1.98 0 0 0 5.25 3Zm14.75 9.85c0-3.47-1.85-5.08-4.32-5.08-1.99 0-2.88 1.1-3.38 1.87V8.5H8.92c.04.76 0 11.5 0 11.5h3.38v-6.42c0-.34.03-.68.12-.93.27-.68.88-1.38 1.92-1.38 1.36 0 1.9 1.03 1.9 2.55V20H20v-7.15Z"></path>
+          </svg>
+
+</a>
           <!-- GitHub -->
           <a href="https://github.com/Alanatk"
              target="_blank"
@@ -108,19 +84,28 @@
                     flex items-center justify-center
                     hover:bg-accent-teal hover:text-primary-dark
                     transition shadow-lg">
-            <i data-lucide="github"></i>
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.1.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.54-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.82 1.31 3.5 1 .1-.78.42-1.31.77-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.69.25 2.94.13 3.25.77.84 1.23 1.91 1.23 3.22 0 4.61-2.82 5.62-5.5 5.92.43.37.82 1.11.82 2.25v3.34c0 .32.21.69.83.57A12 12 0 0 0 12 .5Z"></path>
+            </svg>
           </a>
 
-          <!-- Medium -->
-          <a href="https://medium.com/@your-medium-username"
-             target="_blank"
-             aria-label="Medium"
-             class="w-11 h-11 rounded-full border border-accent-teal text-accent-teal
-                    flex items-center justify-center
-                    hover:bg-accent-teal hover:text-primary-dark
-                    transition shadow-lg font-bold">
-            M
-          </a>
+        <!-- Mail -->
+    <a href="mailto:alanthomask77@gmail.com"
+    target="_blank"
+    aria-label="Email"
+    class="w-11 h-11 rounded-full border border-accent-teal text-accent-teal
+          flex items-center justify-center
+          hover:bg-accent-teal hover:text-primary-dark
+          transition shadow-lg">
+
+  <!-- Correct Email Icon -->
+  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" 
+       stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M4 6h16v12H4z"></path>
+    <path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+
+        </a>
         </div>
 
         <!-- Download CV Button -->
@@ -141,13 +126,15 @@
            class="inline-flex items-center px-8 py-3 rounded-full bg-accent-teal
                   text-primary-dark font-medium hover:bg-teal-600
                   transition transform hover:scale-[1.02] shadow-xl">
-          View Projects <i data-lucide="arrow-right" class="ml-2"></i>
+          View Projects
+          <svg class="ml-2 h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
         </a>
       </div>
 
     </div>
   </section>
-</main>
 
 
     <!-- About Section -->
@@ -233,12 +220,17 @@
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl mx-auto">
           <div class="p-6 bg-secondary-dark rounded-xl shadow-lg border border-accent-teal/10 hover:scale-[1.03] transition">
-            <i data-lucide="code-square" class="text-accent-teal mb-3" width="32" height="32"></i>
+            <svg class="mb-3 h-8 w-8 text-accent-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="m9 8-4 4 4 4M15 8l4 4-4 4M14 4l-4 16" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
             <h3 class="text-xl font-semibold text-text-light">Programming</h3>
             <p class="text-text-secondary text-sm mt-1">Python, Java, C++, JavaScript</p>
           </div>
           <div class="p-6 bg-secondary-dark rounded-xl shadow-lg border border-accent-teal/10 hover:scale-[1.03] transition">
-            <i data-lucide="globe" class="text-accent-teal mb-3" width="32" height="32"></i>
+            <svg class="mb-3 h-8 w-8 text-accent-teal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
             <h3 class="text-xl font-semibold text-text-light">Web Development</h3>
             <p class="text-text-secondary text-sm mt-1">HTML, CSS (Tailwind), React, Node.js</p>
           </div>
@@ -379,7 +371,9 @@
          aria-label="LinkedIn"
          class="text-text-secondary hover:text-accent-teal transition inline-flex items-center justify-center w-10 h-10">
         <span class="pointer-events-none">
-          <i data-lucide="linkedin"></i>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.97 1.97 0 0 0 3.28 5c0 1.08.87 1.97 1.97 1.97A1.97 1.97 0 0 0 7.22 5 1.98 1.98 0 0 0 5.25 3Zm14.75 9.85c0-3.47-1.85-5.08-4.32-5.08-1.99 0-2.88 1.1-3.38 1.87V8.5H8.92c.04.76 0 11.5 0 11.5h3.38v-6.42c0-.34.03-.68.12-.93.27-.68.88-1.38 1.92-1.38 1.36 0 1.9 1.03 1.9 2.55V20H20v-7.15Z"></path>
+          </svg>
         </span>
       </a>
 
@@ -390,7 +384,9 @@
          aria-label="GitHub"
          class="text-text-secondary hover:text-accent-teal transition inline-flex items-center justify-center w-10 h-10">
         <span class="pointer-events-none">
-          <i data-lucide="github"></i>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.1.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.54-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.74.08-.74 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.82 1.31 3.5 1 .1-.78.42-1.31.77-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.31-.54-1.56.12-3.25 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.69.25 2.94.13 3.25.77.84 1.23 1.91 1.23 3.22 0 4.61-2.82 5.62-5.5 5.92.43.37.82 1.11.82 2.25v3.34c0 .32.21.69.83.57A12 12 0 0 0 12 .5Z"></path>
+          </svg>
         </span>
       </a>
 
@@ -399,7 +395,10 @@
          aria-label="Email"
          class="text-text-secondary hover:text-accent-teal transition inline-flex items-center justify-center w-10 h-10">
         <span class="pointer-events-none">
-          <i data-lucide="mail"></i>
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 6h16v12H4z"></path>
+            <path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
         </span>
       </a>
     </div>
@@ -423,7 +422,6 @@
       menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
       mobileMenu.querySelectorAll("a").forEach(link => link.addEventListener("click", () => mobileMenu.classList.add("hidden")));
       document.getElementById("current-year").textContent = new Date().getFullYear();
-      lucide.createIcons();
     });
   </script>
 </body>
