@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    background: #0f172a;
+  }
+}
+
+@layer components {
+  .section-padding {
+    padding: 5rem 0;
+  }
+}
+
+@layer utilities {
+  #hero {
+    min-height: calc(100vh - 74px);
+  }
+
+  #hero h1 {
+    line-height: 1.05;
+  }
+
+  a,
+  button {
+    outline-offset: 4px;
+  }
+
+  @media (max-width: 640px) {
+    .section-padding {
+      padding: 4rem 0;
+    }
+
+    #hero {
+      min-height: auto;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+}
