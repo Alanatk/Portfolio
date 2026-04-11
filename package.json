@@ -1,0 +1,25 @@
+{
+  "name": "portflio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alanatk/Alanthomas.github.io-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Alanatk/Alanthomas.github.io-portfolio/issues"
+  },
+  "homepage": "https://github.com/Alanatk/Alanthomas.github.io-portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
